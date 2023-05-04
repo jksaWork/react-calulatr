@@ -51,7 +51,7 @@ function reduce(state, { type, payload }) {
       return {
         ...state,
         opration: "",
-        prev: "",
+        prev: state.current,
         current: CalcState(state),
       };
       break;
@@ -62,7 +62,6 @@ function reduce(state, { type, payload }) {
 }
 
 const NUMBER_FORMATE = new Intl.NumberFormat("en-US", {
-  style: "currency",
   currency: "USD",
 });
 

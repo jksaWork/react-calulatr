@@ -14,7 +14,7 @@ function CalcState({ prev, current, opration }) {
       return prevValue - CurrentValue;
       break;
 
-    case "/":
+    case "÷":
       return prevValue / CurrentValue;
 
     case "*":
